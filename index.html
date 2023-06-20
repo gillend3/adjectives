@@ -1,1 +1,65 @@
-<! DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disproportionate Enormous Superfluous Needless Adjectives</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Garamond", serif;
+      max-width: 100%;
+    }
+
+    h1, h2 {
+      font-family: "Garamond", serif;
+      margin-bottom: 20px;
+    }
+    
+    .input-box {
+      border: 1px solid black;
+      padding: 10px;
+      width: 100%;
+      max-width: calc(50vw - 20px);
+      height: auto;
+      min-height: 100px;
+      max-height: 50vh;
+      resize: both;
+      overflow: auto;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+      color: gray;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="input container">
+    <h1>Disproportionate Enormous Superfluous Needless Adjectives</h1>
+    <h2 class="subtitle">This little whirligig will highlight your adjectives for you so you can get a sense of how many you’re using. It’s<br> a trap many of us fall into—too many adjectives, which can bog the reader down and impede rather<br> than elucidate.<br></h2>
+    <h2 class="subtitle"><u>Instructions:</u> Just type away, or copy and paste text into the box. The app will detect adjectives and<br> highlight them in yellow for you. You can use the Copy button at the bottom if you want to copy & paste your work<br> into a word processor.</h2>
+    <div class="input-box" type="text" contenteditable="true" id="input-box"></div>
+    <button onclick="copyText()">Copy</button>
+  </div>  
+<script src="xx.js"></script>
+<script src="copy-script.js"></script>
+</body>
+</html>
