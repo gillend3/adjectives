@@ -59,7 +59,36 @@
     <div class="input-box" type="text" contenteditable="true" id="input-box"></div>
     <button onclick="copyText()">Copy</button>
   </div>  
-<script src="xx.js"></script>
+
+  <script>
+    // Function to check if a word is an adjective
+    function isAdjective(word) {
+      var adjectives = ['red', 'blue', 'green', 'yellow'];
+      return adjectives.includes(word.toLowerCase());
+    }
+
+    // Function to handle the input event
+    function handleInput() {
+      var inputBox = document.getElementById('input-box');
+      var words = inputBox.value.split(' ');
+
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        var span = document.createElement('span');
+
+        if (isAdjective(word)) {
+          span.className = 'highlight';
+        }
+
+        span.appendChild(document.createTextNode(word + ' '));
+        inputBox.parentNode.insertBefore(span, inputBox);
+      }
+    }
+
+    var inputBox = document.getElementById('input-box');
+    inputBox.addEventListener('input', handleInput);
+  </script>
+  
 <script src="copy-script.js"></script>
 </body>
 </html>
